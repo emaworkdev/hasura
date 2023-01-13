@@ -81,6 +81,8 @@ sudo certbot delete --cert-name nomedodominio.com
   <summary>Installing NGINX</summary>
 
   ```bash
+	
+************** INSTALAR NGINX CASO NÃO TENHA INTALADO NO SEU SERVIDOR ************************
 
 sudo apt update
 sudo apt install nginx
@@ -91,19 +93,16 @@ sudo ufw status
 
 systemctl status nginx
 
-
+************ OPCIONAL ***********************	
+#pegar ip 
 curl -4 icanhazip.com
-
 http://your_server_ip
-	
+
+#INSTALAR net-tools se precisar	
 apt install net-tools
-	
-MOSTRAR PORTAS
-
+#MOSTRAR PORTAS
 sudo netstat -t -l -p --numeric-ports
-
-LIBERAR PORTA
-
+#LIBERAR PORTA
 sudo iptables -A INPUT -p tcp --dport 8080 -j ACCEPT	
 
 
