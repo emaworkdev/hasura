@@ -115,7 +115,7 @@ docker-compose -d up
 <hr/>
 	
 <details>
-  <summary>Creating a nginx service for hasura</summary>
+  <summary>Creating a service in nginx to enable https for hasura</summary>
 
   ```bash
 
@@ -157,13 +157,6 @@ remover o serviço default que vem como default
 sudo rm /etc/nginx/sites-enabled/default
 sudo service nginx reload
 
-comandos:
-sudo systemctl enable nginx.service
-sudo systemctl stop nginx.service
-sudo systemctl start nginx.service
-sudo systemctl restart nginx.service
-	
-	
 
   ```
 
