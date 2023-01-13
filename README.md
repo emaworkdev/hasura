@@ -170,7 +170,9 @@ sudo systemctl restart nginx.service
 sudo rm /etc/nginx/sites-enabled/default	
 sudo service nginx reload
 	
-	
+#VAMOS TESTAR
+
+https://<seu dominio>/console	
 
 
   ```
