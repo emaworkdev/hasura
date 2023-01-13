@@ -95,6 +95,16 @@ systemctl status nginx
 curl -4 icanhazip.com
 
 http://your_server_ip
+	
+apt install net-tools
+	
+MOSTRAR PORTAS
+
+sudo netstat -t -l -p --numeric-ports
+
+LIBERAR PORTA
+
+sudo iptables -A INPUT -p tcp --dport 8080 -j ACCEPT	
 
 
   ```
