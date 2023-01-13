@@ -3,21 +3,6 @@
 	<p align="center">Hasura-engine is a Open-source.</p>
 </p>
 
-# Hasura
-
-<hr>
-
-```bash
-git clone https://github.com/emaworkdev/hasura.git
-
-cd hasura
-
-docker-compose -d up
-
-```
-<hr/>
-
-
 <details>
   <summary>Installing docker and docker-compose ubuntu 20.04</summary>
 
@@ -50,6 +35,21 @@ docker-compose --version
 
   ```
 
+<details/>
+
+# Hasura
+
+<hr>
+
+```bash
+git clone https://github.com/emaworkdev/hasura.git
+
+cd hasura
+
+docker-compose -d up
+
+```
+<hr/>
 
 ### License
 
