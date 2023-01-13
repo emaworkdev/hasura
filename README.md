@@ -165,11 +165,13 @@ sudo service nginx restart && sudo service nginx reload && sudo nginx -t
 
 sudo ln -s /etc/nginx/sites-available/<nome servico> /etc/nginx/sites-enabled/
 
-sudo systemctl restart nginx.service
-
-remover o serviço default que vem como default
+#remover o serviço default que vem como default
 sudo rm /etc/nginx/sites-enabled/default
+
+sudo systemctl restart nginx.service	
 sudo service nginx reload
+	
+	
 
 
   ```
