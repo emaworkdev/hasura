@@ -1,20 +1,9 @@
 <p align="center">
-	<img src="https://github.com/sufficit/sufficit-quepasa/raw/main/src/assets/favicon.png" alt="Quepasa-logo" width="100" />	
-	<p align="center">Quepasa is a Open-source, all free license software to exchange messages with Whatsapp Platform</p>
+	<img src="https://github.com/emaworkdev/hasura/blob/main/hasura.png" alt="Hasura-logo" width="100" />	
+	<p align="center">Hasura-engine is a Open-source.</p>
 </p>
-<hr />
-<p align="left">
-	<img src="https://telegram.org/favicon.ico" alt="Telegram-logo" width="32" />
-	<span>Chat with us on Telegram: </span>
-	<a href="https://t.me/quepasa_api" target="_blank">Group</a>
-	<span> || </span>
-	<a href="https://t.me/quepasa_channel" target="_blank">Channel</a>
-</p>
-<p align="left">
-	<span>Special thanks to <a target="_blank" href="https://agenciaoctos.com.br">Lukas Prais</a>, who developed this logo.</span>
-</p>
-<hr />
-# QuePasa
+
+# Hasura
 
 > A (micro) web-application to make web-based [WhatsApp][0] bots easy to write.
 
