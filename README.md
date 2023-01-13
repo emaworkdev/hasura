@@ -113,6 +113,62 @@ docker-compose -d up
 
 ```
 <hr/>
+	
+<details>
+  <summary>Creating a nginx service for hasura</summary>
+
+  ```bash
+
+  sudo vim /etc/nginx/sites-available/<nome do serviço>
+	
+dentro do editor vim para entrar no modo de insert: pressionar a tecla shift+i
+
+colar esse scrypt abaixo	
+	
+	server {
+  listen 80;
+  listen 443 ssl;
+  server_name hasura.<my-domain.com>;
+
+  location / {
+    proxy_pass http://localhost:8080/;
+    proxy_http_version 1.1;
+    proxy_set_header Upgrade $http_upgrade;
+    proxy_set_header Connection "upgrade";
+  }
+}
+
+para sair do modo insert
+pressionar a tecla ESC
+
+entrada de comando
+pressionar a tecla :
+
+para salvar e sair
+digitar wq + ENTER	
+	
+sudo service nginx restart && sudo service nginx reload && sudo nginx -t
+
+sudo ln -s /etc/nginx/sites-available/<nome servico> /etc/nginx/sites-enabled/
+
+sudo systemctl restart nginx.service
+
+remover o serviço default que vem como default
+sudo rm /etc/nginx/sites-enabled/default
+sudo service nginx reload
+
+comandos:
+sudo systemctl enable nginx.service
+sudo systemctl stop nginx.service
+sudo systemctl start nginx.service
+sudo systemctl restart nginx.service
+	
+	
+
+  ```
+
+
+</details>	
 
 
 ### License
