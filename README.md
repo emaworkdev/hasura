@@ -42,7 +42,12 @@ docker-compose --version
 
 </details>
 
+
+### Cloning the project
+
 ```bash
+
+
 git clone https://github.com/emaworkdev/hasura.git
 
 cd hasura
