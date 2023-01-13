@@ -7,16 +7,6 @@
 
 <hr>
 
-```bash
-git clone https://github.com/emaworkdev/hasura.git
-
-cd hasura
-
-docker-compose -d up
-
-```
-<hr/>
-
 <details>
   <summary>Installing docker and docker-compose ubuntu 20.04</summary>
 
@@ -51,6 +41,16 @@ docker-compose --version
 
 
 </details>
+
+```bash
+git clone https://github.com/emaworkdev/hasura.git
+
+cd hasura
+
+docker-compose -d up
+
+```
+<hr/>
 
 
 ### License
