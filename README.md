@@ -49,8 +49,8 @@ docker-compose --version
 
   ```
 
-<details/>
 
+</details>
 
 
 ### License
