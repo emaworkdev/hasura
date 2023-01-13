@@ -125,17 +125,17 @@ dentro do editor vim para entrar no modo de insert: pressionar a tecla shift+i
 
 colar esse scrypt abaixo	
 	
-	server {
-  listen 80;
-  listen 443 ssl;
-  server_name hasura.<my-domain.com>;
+server {
+	  listen 80;
+	  listen 443 ssl;
+	  server_name hasura.<my-domain.com>;
 
-  location / {
-    proxy_pass http://localhost:8080/;
-    proxy_http_version 1.1;
-    proxy_set_header Upgrade $http_upgrade;
-    proxy_set_header Connection "upgrade";
-  }
+	  location / {
+	    proxy_pass http://localhost:8080/;
+	    proxy_http_version 1.1;
+	    proxy_set_header Upgrade $http_upgrade;
+	    proxy_set_header Connection "upgrade";
+	  }
 }
 
 para sair do modo insert
