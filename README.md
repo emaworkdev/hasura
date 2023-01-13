@@ -46,6 +46,8 @@ docker-compose --version
   <summary>Installing certbot</summary>
 
   ```bash
+	
+************** INSTALAR CERTBOT CASO NÃO TENHA ELE INTALADO NO SEU SERVIDOR ************************	
 
 https://certbot.eff.org/instructions?ws=nginx&os=ubuntubionic
 
@@ -82,7 +84,7 @@ sudo certbot delete --cert-name nomedodominio.com
 
   ```bash
 	
-************** INSTALAR NGINX CASO NÃO TENHA INTALADO NO SEU SERVIDOR ************************
+************** INSTALAR NGINX CASO NÃO TENHA ELE INTALADO NO SEU SERVIDOR ************************
 
 sudo apt update
 sudo apt install nginx
