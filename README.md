@@ -10,6 +10,10 @@
 ```bash
 git clone https://github.com/emaworkdev/hasura.git
 
+cd hasura
+
+docker-compose -d up
+
 ```
 <hr/>
 
