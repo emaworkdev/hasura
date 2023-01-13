@@ -5,104 +5,48 @@
 
 # Hasura
 
-> A (micro) web-application to make web-based [WhatsApp][0] bots easy to write.
+<hr>
 
-[PostMan Shared Documentations](https://documenter.getpostman.com/view/3955290/2s8Z6yYDjA)
-
-[PostMan Collection](https://www.getpostman.com/collections/569a066d7a2798e8d293)
-
-**Features:**
-  * Verify a number with a QR code
-  * Persistence of account data and keys
-  * Exposes HTTP endpoints for:
-    * sending messages
-    * receiving messages
-    * download attachments
-    * set webhook for receiving messages 
-
-  **WARNING: This application has not been audited. It should not be regarded as
-  secure, use at your own risk.**
-
-  **This is a third-party effort, and is NOT in any affiliated with [WhatsApp][0].**
-
-
-  
-  **Clone and Install**
-  
 ```bash
-git clone https://github.com/sufficit/sufficit-quepasa /opt/quepasa-source
-bash /opt/quepasa-source/helpers/install.sh
+git clone https://github.com/emaworkdev/hasura.git
+
 ```
-    
-  ### **Final step**
-
-  - go to http://your.ip.address:31000/setup in the web browser and register an admin user for your system
-  - login on quepasa http://your.ip.address:31000 from previously created user and scan the qr using you whatsapp 
-
 <hr/>
 
 
 <details>
-  <summary>Anything is section was not reviewed</summary>
-
-  **Implemented features:**
-
-  * Verify a number with a QR code
-  * Persistence of account data and keys
-  * Exposes HTTP endpoints for:
-    * sending messages
-    * receiving messages
-    * download attachments
-    * set webhook for receiving messages 
-
-  **WARNING: This application has not been audited. It should not be regarded as
-  secure, use at your own risk.**
-
-  **This is a third-party effort, and is NOT in any affiliated with [WhatsApp][0].**
-
-  ### Why ?
-  
-  Angry, Angry ... WhatsApp keeps canceling our number.  
-  
-  When you need to communicate over WhatsApp from a different service, for example,
-  [a help desk](http://zammad.org/) or other web-app, QuePasa provides a simple HTTP
-  API to do so.
-
-  QuePasa stores keys and WhatsApp account data in a postgres database. It does
-  not come with HTTPS out of the box. Your QuePasa API tokens essentially give
-  full access to your WhatsApp account (to the extent that QuePasa has
-  implemented WhatsApp features). Use with caution.
-
-  For HTTPS use Nginx.
-
-  ## If are you looking for a NODE.JS Project
-
-  Take a look at
-  https://github.com/pedroslopez/whatsapp-web.js/pulls
-
-  Its a lot more complete tool to whatsapp unofficial api
-
-  ## Join our community 
-  Matrix chat room #cdr-link-dev-support:matrix.org
-  https://app.element.io/#/room/#cdr-link-dev-support:matrix.org
-
-  ## Usage
-
-  ## Prerequisites Local Deployment
-
-  * Mysql (Recommended)
-  * Golang (Version go1.14.15)
-
-  ### *installing above golang version*
+  <summary>Installing docker and docker-compose ubuntu 20.04</summary>
 
   ```bash
-  cd /usr/src
+        sudo apt update
 
-  sudo wget https://golang.org/dl/go1.14.15.linux-amd64.tar.gz
-  sudo rm -rf /usr/local/go && sudo tar -C /usr/local -xzf go1.14.15.linux-amd64.tar.gz
+	sudo apt install apt-transport-https ca-certificates curl software-properties-common
 
-  #export the PATH
-  export PATH=$PATH:/usr/local/go/bin
+	curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
+
+	sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu focal stable"
+
+	apt-cache policy docker-ce
+
+	sudo apt install docker-ce
+
+	no servidor
+	sudo systemctl status docker
+
+	no wsl
+	sudo service docker status
+	sudo service docker start
+
+	sudo usermod -aG docker ${USER}
+	su - ${USER}
+	groups
+	sudo usermod -aG docker username
+
+
+	sudo curl -L "https://github.com/docker/compose/releases/download/1.26.0/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+	sudo chmod +x /usr/local/bin/docker-compose
+	docker-compose --version
+
 
   ```
 
