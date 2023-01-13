@@ -112,7 +112,7 @@ git clone https://github.com/emaworkdev/hasura.git
 
 cd hasura
 
-docker-compose -d up
+docker-compose up -d
 
 ```
 <hr/>
