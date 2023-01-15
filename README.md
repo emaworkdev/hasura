@@ -89,10 +89,6 @@ sudo certbot delete --cert-name nomedodominio.com
 sudo apt update
 sudo apt install nginx
 
-sudo ufw app list
-sudo ufw enable
-sudo ufw status
-
 systemctl status nginx
 
 ************ OPCIONAL ***********************	
