@@ -173,7 +173,7 @@ sudo certbot --nginx -d <dominio>
 	
 #VAMOS TESTAR
 
-https://<seu dominio>/console	
+https://<seu dominio>	
 
 
   ```
