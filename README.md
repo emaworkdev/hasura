@@ -25,6 +25,8 @@ sudo apt install docker-ce
 
 sudo systemctl status docker
 
+docker --version
+
 sudo usermod -aG docker ${USER}
 su - ${USER}
 groups
