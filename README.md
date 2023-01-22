@@ -169,6 +169,8 @@ sudo systemctl restart nginx.service
 sudo rm /etc/nginx/sites-enabled/default	
 sudo service nginx reload
 	
+sudo certbot --nginx -d <dominio>	
+	
 #VAMOS TESTAR
 
 https://<seu dominio>/console	
