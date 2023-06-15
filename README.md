@@ -53,6 +53,7 @@ docker-compose --version
 
 https://certbot.eff.org/instructions?ws=nginx&os=ubuntubionic
 
+sudo apt install snapd
 sudo snap install core; sudo snap refresh core
 
 sudo snap install --classic certbot
